@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'login.dart';
+import 'quejas.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 22, 170, 54)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 25, 1, 1)),
         useMaterial3: true,
       ),
       home: HomePage(),
@@ -28,11 +28,11 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-          child: Text('Acceder'),
+          child: Text('ir al formu'),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => LoginPage()),
+              MaterialPageRoute(builder: (context) => QuejasPage()),
             );
           },
         ),
